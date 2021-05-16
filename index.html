@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alex &amp; Deniz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="images/wedding-landing-favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes%7CMuli:400,700%7CLibre+Baskerville:300,400,700" rel="stylesheet">
+</head>
+<body>
+  <header class="cover">
+      <div class="hero-text-wrapper">
+        <div class="hero-text">
+          <div class="tagline">Ne Casatorim!</div>
+          <h1>Alex &amp; Deniz</h1>
+          <span class="date">Septembrie 25, 2021</span>
+        </div>
+      </div>
+  </header>
+  <main>
+    <section class="locations">
+      <h2>Locations</h2>
+      <div class="blurb">
+        <h3>Cununia civila</h3>
+        <img src="images/photoicon2.png" alt="Ceremony">
+        <div>Octombrie 22, 2020</div>
+        <div>Casa casatoriilor, Constanta</div>
+      </div>
+           <div class="blurb">
+             <img src="images/Clock.png" alt="Ceremony">
+              <p id="demo"></p>
+           </div>
+        <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 25, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+      <div class="blurb">
+        <h3>Party</h3>
+        <img src="images/cakeicon2.png" alt="Party">
+        <div>Golden Palace</div>
+        <div>Blvd Mamaia, Constanta</div>
+      </div>
+    </section> 
+    <section class="program">
+      <h2>Program</h2>
+      <div class="program-wrapper">
+       
+        <ul>
+          <li>14:00 – Acasa la mire</li>
+          <li>15:00 - Sosire la nasi</li>
+          <li>16:00 – Am venit sa luam mireasa!</li>
+          <li>17:30 – Sesiune foto</li>
+          <li>19:00 – Sosire la restaurant</li>
+          <li>... - 4:00 – Dansam pana la rasarit</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Pentru orice nelamurire nu ezitati sa ne contactati</p>
+      <p>Phone: <a href="tel:0720 257 596">0720 257 596</a> (Alex) / <a href="tel:0733 562 662">0733 562 662</a> (Deniz)</p>
+      <p>Email: <a href="mailto:denizabdula@yahoo.com">denizabdula@yahoo.com</a></p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <p><small>Made with ♥ in Constanta &copy;2021</p>
+    </div>
+  </footer>
+</body>
+</html>
