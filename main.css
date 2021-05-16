@@ -65,7 +65,7 @@ a:hover {
 =============================*/
 
 .cover {
-  background: url('Gallery/cover1.jpg') no-repeat 70% center/cover;
+  background: url('images/cover1.jpg') no-repeat 70% center/cover;
   display: table;
   text-align: center;
   height: 100vh;
